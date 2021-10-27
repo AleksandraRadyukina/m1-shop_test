@@ -1,0 +1,40 @@
+
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding: 10px 0 10px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__navbar-menu {
+    display: flex;
+    width: 470px;
+    justify-content: space-between;
+}
+
+.header__navbar-menu {
+  list-style-type: none;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+}
