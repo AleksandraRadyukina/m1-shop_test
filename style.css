@@ -38,3 +38,7 @@ header {
   letter-spacing: normal;
   line-height: 20px;
 }
+
+main {
+  background-image: url(./img/main-bg.png);
+}
