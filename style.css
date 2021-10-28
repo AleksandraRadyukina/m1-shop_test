@@ -41,4 +41,83 @@ header {
 
 main {
   background-image: url(./img/main-bg.png);
+  background-position: center;
+  height: 659px;
+}
+
+.main__container {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 92px 0 124px;
+}
+
+.main__title {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 34px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 90px;
+  text-align: center;
+}
+
+.main__title_accent {
+  font-size: 82px;
+  font-weight: 700;
+}
+
+.line {
+  width: 460px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.main__subtitle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 50px;
+  }
+
+  .main__subtitle_accent {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .main__price {
+    font-size: 48px;
+  }
+
+.main__button {
+  padding: 26px 19px;
+  border: 2px solid #ffffff;
+  font-family: "Open Sans - Semibold";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background: transparent;
 }
