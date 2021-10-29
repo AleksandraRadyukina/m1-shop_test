@@ -245,6 +245,50 @@ p {
   grid-template-columns: 12rem repeat(6, 7.375rem);
 }
 
+.name-parameter {
+  color: #1e1e1e;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+}
+
+.size-international {
+  color: #1e1e1e;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.size-rus {
+  color: #1e1e1e;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: center;
+}
+
+.size {
+  color: #1e1e1e;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: center;
+}
+
 .table__line-international{
   padding: 16px 41px 11px 29px;
   background-color: #f3f3f3;
