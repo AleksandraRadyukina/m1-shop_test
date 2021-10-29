@@ -28,7 +28,7 @@ header {
   list-style-type: none;
 }
 
-.navbar-menu__link {
+.header__navbar-menu__link {
   text-decoration: none;
   color: #1e1e1e;
   font-family: "Open Sans";
@@ -71,7 +71,7 @@ main {
   text-align: center;
 }
 
-.main__title_accent {
+.main__title-accent {
   font-size: 82px;
   font-weight: 700;
 }
@@ -98,7 +98,7 @@ main {
   margin-bottom: 50px;
 }
 
-.main__subtitle_accent {
+.main__subtitle-accent {
     font-size: 36px;
     font-weight: 700;
     line-height: 48px;
