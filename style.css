@@ -204,12 +204,19 @@ p {
 .table-size {
   background-image: url(./img/BG-size.png);
   background-position: center;
-  height: 431px;
-  
+  min-height: 431px;
+  background-repeat: no-repeat;
 }
 
 .table-size__container {
-  padding: 41px 0 50px;
+  padding: 41px 0 20px;
+}
+
+.table-size-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .table-size__title {
@@ -223,14 +230,42 @@ p {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
-.table-size__table {
-  display: flex;
-  flex-direction: column;
+.table {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
 .table__line {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 12rem repeat(6, 7.375rem);
+}
+
+.table__line-international{
+  padding: 16px 41px 11px 29px;
+  background-color: #f3f3f3;
+}
+
+.table__line-rus {
+  padding: 16px 46px 11px 29px;
+  background-color: #ffffff;
+}
+
+.table__line-hips { 
+  padding: 16px 30px 11px 29px;
+  background-color: #f3f3f3;
+}
+
+.table__line-waist {
+  padding: 16px 32px 11px 29px;
+  background-color: #ffffff;
+}
+
+.table__line-breast {
+  padding: 16px 28px 11px 29px;
+  background-color: #f3f3f3;
 }
