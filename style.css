@@ -387,6 +387,7 @@ p {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .card__size-absent {
@@ -406,6 +407,7 @@ p {
   border-radius: 50%;
   border: 2px solid #dbdbdf;
   background-color: #000000;
+  cursor: pointer;
 }
 
 .card__color-red {
@@ -414,6 +416,7 @@ p {
   border-radius: 50%;
   border: 2px solid #dbdbdf;
   background-color: #ff0000;
+  cursor: pointer;
 }
 
 .card__prices{
@@ -511,6 +514,7 @@ p {
   margin-top: 40px;
   margin-left: 39px;
 }
+
 
 .step__text {
   color: #1e1e1e;
