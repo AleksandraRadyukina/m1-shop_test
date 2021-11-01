@@ -206,6 +206,7 @@ p {
   background-position: center;
   min-height: 431px;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .table-size__container {
@@ -339,13 +340,20 @@ p {
   margin-bottom: 25px;
 }
 
-.catalog__buttons {
-  display: flex;
+.catalog__radio-buttons {
+	display: flex;
+	overflow: hidden;
   margin-bottom: 30px;
 }
 
-.catalog__button {
-  padding: 27px 35px 22px;
+
+.catalog__radio  {
+	display: none;
+}
+
+.catalog__button  {
+  display: block;
+	padding: 27px 35px 22px;
   border: none;
   font-family: "Open Sans - Semibold";
   font-size: 18px;
@@ -358,7 +366,22 @@ p {
   background-color: #f3f3f3;
   color: #1e1e1e;
   text-transform: uppercase;
+	cursor: pointer;
+	user-select: none;   
 }
+
+ 
+/* Checked */
+.catalog__radio-buttons .button-1 input[type=radio]:checked + label {
+	background: #ba0152;
+  color: #ffffff;
+}
+.catalog__radio-buttons .button-2 input[type=radio]:checked + label {
+	background: #ba0152;
+  color: #ffffff;
+}
+
+
 
 .catalog__cards {
   display: grid;
@@ -421,6 +444,10 @@ p {
   width: 80%;
 }
 
+.size__radio {
+  display: none;
+}
+
 .card__size {
   color: #1e1e1e;
   font-family: "Open Sans";
@@ -438,6 +465,13 @@ p {
   color: #ceced3;
 }
 
+/* Checked */
+.size__radio_btn input[type=radio]:checked + label {
+	border: 1px solid red;
+  padding: 0 4px;
+  border-radius: 9px;
+}
+
 .card__colors {
   display: flex;
   width: 30%;
@@ -445,7 +479,12 @@ p {
   margin-bottom: 20px;
 }
 
+.color__radio {
+  display: none;
+}
+
 .card__color-black {
+  display: block;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -455,12 +494,18 @@ p {
 }
 
 .card__color-red {
+  display: block;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 2px solid #dbdbdf;
   background-color: #ff0000;
   cursor: pointer;
+}
+
+/* Checked */
+.сolor__radio_btn input[type=radio]:checked + label {
+  border: 3px solid red;
 }
 
 .card__prices{

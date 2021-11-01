@@ -62,11 +62,11 @@
         <h2 class="description__title">Хит №1 в мире – модные жеские портупеи 2017</h2>
         <hr class="line">
 
-        <span class="description__text"> 
+        <div class="description__text"> 
           <p> Как и все кожаные аксессуары, портупея находится сегодня на пике востребованности в мире моды, даря своей обладательнице внимание и уверенность в себе.</p>
           <p> Многообразие видов портупей – это как Характер каждой девушки: от портупеи из тонких ремешков для романтичных и женственных натур, до сложных сплетений из средних и широких - для дерзких и раскрепощенных. </p>
          
-           </span>
+           </div>
       </div>
 
       <div class="description__images">
@@ -152,12 +152,18 @@
       <div class="catalog-wrapper">
         <div class="catalog__title">Каталог</div>
         <hr class="line">
-        <div class="catalog__buttons">
-          <button class="catalog__button">повседневные портупеи</button>
-          <button class="catalog__button">эротичесские портупеи</button>
+        <div class="catalog__radio-buttons">
+          <div class="catalog__radio-button button-1">
+            <input class="catalog__radio" id="fid-1" type="radio" name="radio-catalog" value="off" checked="" >
+            <label for="fid-1" class="catalog__button">повседневные портупеи</label>
+          </div>
+          <div class="catalog__radio-button button-2">
+            <input class="catalog__radio" id="fid-2" type="radio" name="radio-catalog" value="off" checked="" >
+            <label for="fid-2" class="catalog__button">эротичесские портупеи</label>
+          </div>
         </div>
       </div>
-
+     
 
       <div class="catalog__cards">
         <div class="catalog__card card">
@@ -168,16 +174,41 @@
           
           <h3 class="card__title">Портупея “Пеппи”</h3>
           <div class="card__sizes">
-            <div class="card__size">xs</div>
-            <div class="card__size">s</div>
-            <div class="card__size">m</div>
-            <div class="card__size">l</div>
-            <div class="card__size card__size-absent">xl</div>
-            <div class="card__size card__size-absent">xxl</div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-1" type="radio" name="radio-size" value="1" checked>
+              <label class="card__size" for="radio-1">xs</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-2" type="radio" name="radio-size" value="2" checked>
+              <label class="card__size" for="radio-2">s</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-3" type="radio" name="radio-size" value="3" checked>
+              <label class="card__size" for="radio-3">m</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-4" type="radio" name="radio-size" value="4" checked>
+              <label class="card__size" for="radio-4">l</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-5" type="radio" name="radio-size" value="5" disabled>
+              <label class="card__size card__size-absent" for="radio-5">xl</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-6" type="radio" name="radio-size" value="6" disabled>
+              <label class="card__size card__size-absent" for="radio-6">xxl</label>
+            </div>
+            
           </div>
           <div class="card__colors">
-            <div class="card__color-black"></div>
-            <div class="card__color-red"></div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-1" type="radio" name="radio-color" value="1" checked>
+              <label class="card__color-black" for="color-1"></label>
+            </div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-2" type="radio" name="radio-color" value="2" checked>
+              <label class="card__color-red" for="color-2"></label>
+            </div>
           </div>
           <div class="card__prices">
             <span class="card__price-old">4990 p</span>
@@ -194,15 +225,37 @@
           
           <h3 class="card__title">Портупея “Влади”</h3>
           <div class="card__sizes">
-            <div class="card__size">xs</div>
-            <div class="card__size">s</div>
-            <div class="card__size">m</div>
-            <div class="card__size">l</div>
-            <div class="card__size">xl</div>
-            <div class="card__size">xxl</div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-7" type="radio" name="radio-size" value="7" checked>
+              <label class="card__size" for="radio-7">xs</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-8" type="radio" name="radio-size" value="8" checked>
+              <label class="card__size" for="radio-8">s</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-9" type="radio" name="radio-size" value="9" checked>
+              <label class="card__size" for="radio-9">m</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-10" type="radio" name="radio-size" value="10" checked>
+              <label class="card__size" for="radio-10">l</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-11" type="radio" name="radio-size" value="11" >
+              <label class="card__size " for="radio-11">xl</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-12" type="radio" name="radio-size" value="12" >
+              <label class="card__size " for="radio-12">xxl</label>
+            </div>
+            
           </div>
           <div class="card__colors">
-            <div class="card__color-black"></div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-3" type="radio" name="radio-color" value="3" checked>
+              <label class="card__color-black" for="color-3"></label>
+            </div>
           </div>
           <div class="card__prices">
             <span class="card__price-old">4990 p</span>
@@ -219,16 +272,41 @@
          
           <h3 class="card__title">Портупея “Джони Миллер”</h3>
           <div class="card__sizes">
-            <div class="card__size">xs</div>
-            <div class="card__size">s</div>
-            <div class="card__size">m</div>
-            <div class="card__size">l</div>
-            <div class="card__size card__size-absent">xl</div>
-            <div class="card__size card__size-absent">xxl</div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-13" type="radio" name="radio-size" value="13" checked>
+              <label class="card__size" for="radio-13">xs</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-14" type="radio" name="radio-size" value="14" checked>
+              <label class="card__size" for="radio-14">s</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-15" type="radio" name="radio-size" value="15" checked>
+              <label class="card__size" for="radio-15">m</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-16" type="radio" name="radio-size" value="16" checked>
+              <label class="card__size" for="radio-16">l</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-17" type="radio" name="radio-size" value="17" disabled>
+              <label class="card__size card__size-absent" for="radio-17">xl</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-18" type="radio" name="radio-size" value="18" disabled>
+              <label class="card__size card__size-absent" for="radio-18">xxl</label>
+            </div>
+            
           </div>
           <div class="card__colors">
-            <div class="card__color-black"></div>
-            <div class="card__color-red"></div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-4" type="radio" name="radio-color" value="4" checked>
+              <label class="card__color-black" for="color-4"></label>
+            </div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-5" type="radio" name="radio-color" value="5" checked>
+              <label class="card__color-red" for="color-5"></label>
+            </div>
           </div>
          <div class="card__prices">
             <span class="card__price-old">4990 p</span>
@@ -245,16 +323,41 @@
           
           <h3 class="card__title">Портупея “Пеппи”</h3>
           <div class="card__sizes">
-            <div class="card__size">xs</div>
-            <div class="card__size">s</div>
-            <div class="card__size">m</div>
-            <div class="card__size">l</div>
-            <div class="card__size card__size-absent">xl</div>
-            <div class="card__size card__size-absent">xxl</div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-19" type="radio" name="radio-size" value="19" checked>
+              <label class="card__size" for="radio-19">xs</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-20" type="radio" name="radio-size" value="20" checked>
+              <label class="card__size" for="radio-20">s</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-21" type="radio" name="radio-size" value="21" checked>
+              <label class="card__size" for="radio-21">m</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-22" type="radio" name="radio-size" value="22" checked>
+              <label class="card__size" for="radio-22">l</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-23" type="radio" name="radio-size" value="23" disabled>
+              <label class="card__size card__size-absent" for="radio-23">xl</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-24" type="radio" name="radio-size" value="24" disabled>
+              <label class="card__size card__size-absent" for="radio-24">xxl</label>
+            </div>
+            
           </div>
           <div class="card__colors">
-            <div class="card__color-black"></div>
-            <div class="card__color-red"></div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-6" type="radio" name="radio-color" value="6" checked>
+              <label class="card__color-black" for="color-6"></label>
+            </div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-7" type="radio" name="radio-color" value="7" checked>
+              <label class="card__color-red" for="color-7"></label>
+            </div>
           </div>
          <div class="card__prices">
             <span class="card__price-old">4990 p</span>
@@ -271,15 +374,38 @@
          
           <h3 class="card__title">Портупея “Влади”</h3>
           <div class="card__sizes">
-            <div class="card__size">xs</div>
-            <div class="card__size">s</div>
-            <div class="card__size">m</div>
-            <div class="card__size">l</div>
-            <div class="card__size">xl</div>
-            <div class="card__size">xxl</div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-25" type="radio" name="radio-size" value="25" checked>
+              <label class="card__size" for="radio-25">xs</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-26" type="radio" name="radio-size" value="26" checked>
+              <label class="card__size" for="radio-26">s</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-27" type="radio" name="radio-size" value="27" checked>
+              <label class="card__size" for="radio-27">m</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-28" type="radio" name="radio-size" value="28" checked>
+              <label class="card__size" for="radio-28">l</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-29" type="radio" name="radio-size" value="29" >
+              <label class="card__size" for="radio-29">xl</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-30" type="radio" name="radio-size" value="30" >
+              <label class="card__size" for="radio-30">xxl</label>
+            </div>
+            
           </div>
           <div class="card__colors">
-            <div class="card__color-black"></div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-8" type="radio" name="radio-color" value="8" checked>
+              <label class="card__color-black" for="color-8"></label>
+            </div>
+            
           </div>
          <div class="card__prices">
             <span class="card__price-old">4990 p</span>
@@ -296,16 +422,41 @@
           
           <h3 class="card__title">Портупея “Джони Миллер”</h3>
           <div class="card__sizes">
-            <div class="card__size">xs</div>
-            <div class="card__size">s</div>
-            <div class="card__size">m</div>
-            <div class="card__size">l</div>
-            <div class="card__size card__size-absent">xl</div>
-            <div class="card__size card__size-absent">xxl</div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-31" type="radio" name="radio-size" value="31" checked>
+              <label class="card__size" for="radio-31">xs</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-32" type="radio" name="radio-size" value="32" checked>
+              <label class="card__size" for="radio-32">s</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-33" type="radio" name="radio-size" value="33" checked>
+              <label class="card__size" for="radio-33">m</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-34" type="radio" name="radio-size" value="34" checked>
+              <label class="card__size" for="radio-34">l</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-35" type="radio" name="radio-size" value="35" disabled>
+              <label class="card__size card__size-absent" for="radio-35">xl</label>
+            </div>
+            <div class="size__radio_btn">
+              <input class="size__radio" id="radio-36" type="radio" name="radio-size" value="36" disabled>
+              <label class="card__size card__size-absent" for="radio-36">xxl</label>
+            </div>
+            
           </div>
           <div class="card__colors">
-            <div class="card__color-black"></div>
-            <div class="card__color-red"></div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-9" type="radio" name="radio-color" value="9" checked>
+              <label class="card__color-black" for="color-9"></label>
+            </div>
+            <div class="сolor__radio_btn">
+              <input class="color__radio" id="color-10" type="radio" name="radio-color" value="10" checked>
+              <label class="card__color-red" for="color-10"></label>
+            </div>
           </div>
          <div class="card__prices">
             <span class="card__price-old">4990 p</span>
