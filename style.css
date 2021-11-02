@@ -44,15 +44,32 @@ header {
 /* main */
 
 main {
-  background-image: url(./img/main-bg.png);
+  background-image: url(./img/bg-main.png);
   background-position: center;
   height: 659px;
 }
 
-.main__container {
-  width: 550px;
-  margin-left: auto;
-  margin-right: auto;
+
+.main__background {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  z-index: -1;
+  height: 100%;
+}
+
+.main__background_left {
+  bottom: -8px;
+  left: -220px;
+  z-index: -1;
+  position: absolute;
+}
+
+.main__background_right {
+  position: absolute;
+  bottom: -8px;
+  right: -220px;
+  z-index: -1;
 }
 
 .main-wrapper {
@@ -61,8 +78,22 @@ main {
   justify-content: center;
   align-items: center;
   padding: 92px 0 106px;
+  width: 550px;
+  position: relative;
+  z-index: 1;
+  left: 0;
 }
 
+.main__container {
+  display: flex;
+  justify-content: center;
+}
+
+.main__background-container {
+  position: relative;
+  height: initial;
+  display: block;
+}
 .main__title {
   margin: 0;
   color: #ffffff;
