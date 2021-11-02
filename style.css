@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 960px;
   margin-left: auto;
@@ -412,6 +416,15 @@ p {
 	user-select: none;   
 }
 
+.catalog__erotic {
+  visibility: hidden;
+  opacity: 0;
+}
+.catalog__erotic--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
  
 /* Checked */
 .catalog__radio-buttons .button-1 input[type=radio]:checked + label {
@@ -660,6 +673,8 @@ p {
   text-align: center;
   width: 96%;
 }
+
+/* popup */
 
 .popup__overlay {
 	content: '';
